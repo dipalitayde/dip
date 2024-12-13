@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <titile></titile>
+    </head>
+    <body style="background-color: rgb(255, 220, 240);">
+        <h1 style="text-align: center; text-shadow: 1px 1px 1px rgb(0, 0, 0);color: yellow;">javascript methods and loops</h1>
+        <p id="durva"></p>
+        <script>
+            var day;
+            switch (new Date().getDay()) {
+                case 0:
+                    day = "sunday";
+                    break;
+
+
+                case 1:
+                    day = "monday";
+                    break;
+
+
+                case 2:
+                    day = "tuesday";
+                    break;
+
+                case 3:
+                    day = "wednesday";
+                    break;
+
+
+                case 4:
+                    day = "thrusday";
+                    break;
+
+
+                case 5:
+                    day = "friday";
+                    break;
+
+                case 6:
+                    day = "saturday";
+
+            }
+            document.getElementById("durva").innerHTML = "today is  " + day;
+        </script>
+        <h2>javascript string method</h2>
+        <p>basic method</p>
+        <script>
+            var str = "myname";
+            document.write(str.toUpperCase());
+            document.write("<br>");
+            document.write(str.toLowerCase());
+            document.write("<br>");
+            document.write(str.startsWith('i'));
+            document.write("<br>");
+
+            var str1 = "My name is dipali";
+
+            var patt = new RegExp("name");
+            var res = patt.test(str1);
+            document.write(res);
+        
+
+            
+
+        </script>
+
+        <h2>javascript loop function</h2>
+        <p id="durva"></p>
+        <script>
+            var fruits = ["Mango", "Banana", "Apple", "kiwi", "Grapes", "Watermelon"];
+            var text = "";
+            var i;
+            for (i = 0; i < fruits.length; i++) {
+                text += fruits[i] + "<br>";
+
+            }
+            document.getElementById("durva").innerHTML = text;
+        </script>
+        
+    </body>
+</html>
